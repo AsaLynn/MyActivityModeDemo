@@ -8,7 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class TempActivity extends AppCompatActivity implements View.OnClickListener {
 
     protected Button button;
     protected Button button2;
@@ -19,11 +19,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.setContentView(R.layout.activity_main);
+        super.setContentView(R.layout.activity_temp);
         initView();
+        Log.i(TAG, this + ILogTag.ARROW + "onCreate: ");
         ActionBar supportActionBar = getSupportActionBar();
         supportActionBar.setTitle(this.getClass().getSimpleName());
-        Log.i(TAG, this + ILogTag.ARROW + "onCreate: ");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i(TAG, this + ILogTag.ARROW + "onStop: ");
     }
 
     @Override
@@ -45,12 +51,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initView() {
         button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(MainActivity.this);
+        button.setOnClickListener(TempActivity.this);
         button2 = (Button) findViewById(R.id.button2);
-        button2.setOnClickListener(MainActivity.this);
+        button2.setOnClickListener(TempActivity.this);
         button3 = (Button) findViewById(R.id.button3);
-        button3.setOnClickListener(MainActivity.this);
+        button3.setOnClickListener(TempActivity.this);
         button4 = (Button) findViewById(R.id.button4);
-        button4.setOnClickListener(MainActivity.this);
+        button4.setOnClickListener(TempActivity.this);
     }
 }

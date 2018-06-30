@@ -21,6 +21,16 @@
         <activity
             android:name=".StandardActivity"
             android:launchMode="standard" />
+        <activity
+            android:name=".SingleTopActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".TempActivity" />
+        <activity
+            android:name=".SingleTaskActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:launchMode="singleInstance"
+            android:name=".SingleInstanceActivity" />
     </application>
 
 </manifest>

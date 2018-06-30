@@ -5,29 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".TempActivity">
 
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MainActivity中启动StandardActivity" />
+        android:text="TempActivity中启动StandardActivity" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MainActivity中启动SingleTopActivity" />
+        android:text="TempActivity中启动SingleTopActivity" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MainActivity中启动SingleTaskActivity" />
+        android:text="TempActivity中启动SingleTaskActivity" />
+
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MainActivity中启动SingleInstanceActivity" />
+        android:text="TempActivity中启动SingleInstanceActivity" />
+
 </LinearLayout>
